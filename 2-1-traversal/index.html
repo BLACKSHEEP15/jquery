@@ -148,9 +148,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $('#Now').click(function(){
+
+      const $parent = $(this).parent()
+      $parentSiblings = $parent.siblings()
       // $(this).nextAll().css('background-color','pink')
       // $(this).prevAll().css('background-color','pink')
-      $(this).siblings().first().css('background-color','pink')
+      // $(this).siblings().first().css('background-color','pink')
+      // $(this).parents().next().css('background-color','pink')
+      // $(this).parent().css('background-color','pink')
+      // $(this).parent().siblings().eq(3).find('p').eq(1).css('background-color','pink')
+      // $(this).parent().siblings().eq(0).css('background-color','pink')
+      $parentSiblings.siblings().eq(0).css('background-color','pink')
+
+
     })
 
   </script>
